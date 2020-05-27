@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Arbyte</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container mt-5">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h5 class="card-title">
+                    Formulário
+                </h5>
+            </div>
+
+            <div class="card-body">
+                <form id="formulario">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Nome" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="E-mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo</label>
+                        <select id='sexo' class="form-control">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="ativo">
+                        <label for="ativo">Ativo?</label>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="cadastrar">Cadastrar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="card mt-5">
+
+            <div class="card-header">
+                <h5 class="card-title">
+                    Tabela de Usuários
+                </h5>
+            </div>
+
+            <div class="card-body">
+                <table class="table" id="tabelaUsuarios">
+                    <thead> <!-- Table Head -> Cabeçalho da Tabela -->
+                        <tr> <!-- Table Row -> Linha da Tabela -->
+                            <th>Nome</th> <!-- Table Header -> Coluna de Cabeçalho da Tabela -->
+                            <th>E-mail</th>
+                            <th>Sexo</th>
+                            <th>Ativo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela">
+                        <tr>
+                            <td>Roberto Camargo</td>
+                            <td>robertoc96@outlook.com</td>
+                            <td>Masculino</td>
+                            <td>Ativo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
